@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 body {
   font-family: 'Press Start 2P', cursive !important;
 }
@@ -21,6 +23,12 @@ body {
 }
 .home_background_2{
   background-image: url("/images/home/2.jpeg");
+  background-size: cover;
+  background-repeat: round;
+  overflow: hidden;
+}
+.list_background_1{
+  background-image: url("/images/list/1.jpg");
   background-size: cover;
   background-repeat: round;
   overflow: hidden;
@@ -50,6 +58,28 @@ body {
   color: black;
   font-size: 10px;
 }
+
+.pixelated {
+  image-rendering: pixelated;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.text-neon-pink {
+  color: black;
+  /* text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 15px #ff00ff, 0 0 20px #ff00ff; */
+}
+
+.hover-shadow-lg {
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.hover-shadow-lg:hover {
+  box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+}
+
+
+
 /* // Small devices (landscape phones, 576px and d) */
 @media (max-width: 576px) { 
   .title{

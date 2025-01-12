@@ -1,3 +1,9 @@
+import { GameGrid } from "./gamegrid";
 export default function List() {
-    return <h1>Hello Next.js ????!</h1>
+    return <>
+    <div className="wrapper ">
+      <GameGrid></GameGrid>
+    </div>
+
+    </>
   }
