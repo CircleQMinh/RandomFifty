@@ -13,6 +13,11 @@ const gameIcons = Array.from({ length: 24 }, (_, i) => ({
     src: `/images/icons/card01.jpg?height=96&width=96`,
     alt: `Game Icon 1`
   }
+  gameIcons[1] = {
+    id: "trexrun",
+    src: `/images/icons/dino02.jpeg?height=96&width=96`,
+    alt: `Game Icon 1`
+  }
   
   export function GameGrid() {
     return (
@@ -21,7 +26,7 @@ const gameIcons = Array.from({ length: 24 }, (_, i) => ({
         <div className="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-2">
           {gameIcons.map((icon) => (
             <div key={icon.id} className="col">
-              <Icon src={icon.src} alt={icon.alt} />
+              <Icon src={icon.src} alt={icon.alt} id={icon.id} />
             </div>
           ))}
         </div>
